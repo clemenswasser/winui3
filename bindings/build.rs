@@ -1,9 +1,3 @@
 fn main() {
-    windows::build!(
-        Windows::ApplicationModel::Activation::*,
-        Microsoft::UI::Xaml::{
-            Application, ApplicationInitializationCallback, Controls::TextBox,
-            LaunchActivatedEventArgs, Window,
-        },
-    );
+    windows::build!(Microsoft::UI::Xaml::Application);
 }
