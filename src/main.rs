@@ -7,7 +7,7 @@ use bindings::{
         LaunchActivatedEventArgs, Window,
     },
 };
-use windows::{implement, initialize_mta};
+use windows::{implement, initialize_sta};
 
 #[implement(
     extend Microsoft::UI::Xaml::Application,
@@ -25,7 +25,7 @@ impl App {
 }
 
 fn main() -> windows::Result<()> {
-    initialize_mta()?;
+    initialize_sta()?;
     
     Application::Start(ApplicationInitializationCallback::new(|_| {
         App().new()?;

@@ -17,10 +17,13 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="winui3.exe" EntryPoint="WinUI3.App">
+    <Application Id="App" Executable="winui3.exe" EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements DisplayName="Rust WinUI3 App" Description="Rust WinUI3 App" BackgroundColor="transparent" Square150x150Logo="Square150x150Logo.png" Square44x44Logo="Square44x44Logo.png">
         <uap:SplashScreen Image="SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
 </Package>
