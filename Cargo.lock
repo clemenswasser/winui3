@@ -51,7 +51,7 @@ checksum = "8ccb82d61f80a663efe1f787a51b16b5a51e3314d6ac365b08639f52387b33f3"
 [[package]]
 name = "windows"
 version = "0.10.0"
-source = "git+https://github.com/microsoft/windows-rs.git?branch=impl_inner#73a24f11a03c172dcb320d92350c002abdfb0da1"
+source = "git+https://github.com/microsoft/windows-rs.git#510aab24fe511bfd8b5a26868a5ca99691cf03de"
 dependencies = [
  "const-sha1",
  "windows_gen",
@@ -61,12 +61,12 @@ dependencies = [
 [[package]]
 name = "windows_gen"
 version = "0.10.0"
-source = "git+https://github.com/microsoft/windows-rs.git?branch=impl_inner#73a24f11a03c172dcb320d92350c002abdfb0da1"
+source = "git+https://github.com/microsoft/windows-rs.git#510aab24fe511bfd8b5a26868a5ca99691cf03de"
 
 [[package]]
 name = "windows_macros"
 version = "0.10.0"
-source = "git+https://github.com/microsoft/windows-rs.git?branch=impl_inner#73a24f11a03c172dcb320d92350c002abdfb0da1"
+source = "git+https://github.com/microsoft/windows-rs.git#510aab24fe511bfd8b5a26868a5ca99691cf03de"
 dependencies = [
  "syn",
  "windows_gen",

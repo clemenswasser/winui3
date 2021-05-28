@@ -26,6 +26,7 @@ impl App {
 
 fn main() -> windows::Result<()> {
     initialize_mta()?;
+    
     Application::Start(ApplicationInitializationCallback::new(|_| {
         App().new()?;
         Ok(())
